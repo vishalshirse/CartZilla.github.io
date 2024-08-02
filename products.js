@@ -1,7 +1,8 @@
 let productsel=document.querySelector(".row");
 let cartitemsel=document.querySelector(".modal-body");
 let subtotalel=document.querySelector(".subtotal");
-let itemsincartel=document.querySelector(".btn-light span")
+let itemsincartel=document.querySelector(".btn-light span");
+
 const products=[
     {
         tag:1,
@@ -199,3 +200,4 @@ function removeitem(tag)
     cart=cart.filter((item)=>item.tag!==tag);
     updatecart();
 }
+
